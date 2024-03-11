@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>QR Code Scanner</title>
+  <style>
+    #video-container {
+      width: 100%;
+      height: auto;
+      margin: 20px auto;
+      text-align: center;
+    }
+    #video {
+      width: 80%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="name">QR Code Scanner</h1>
+  <div id="video-container">
+    <video id="video" playsinline autoplay></video>
+  </div>
+  <div class="para">
+    <p class="par" id="paragraph"></p>
+  </div>
+
+  <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
